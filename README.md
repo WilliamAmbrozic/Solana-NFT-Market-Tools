@@ -88,7 +88,7 @@ For Example:
 
 **DEMO:**
 
-![Buyers](https://imgur.com/qTbnq1D.png)
+![Buyers](https://imgur.com/fubeDMN.png)
 
 **Run With:**
 
