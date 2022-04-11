@@ -1,6 +1,6 @@
 # MagicEden-NFT-Scripts
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This repo contains scripts that access NFT APIs such as MagicEden (marketplace) or HowRare.is (rarity tools) to analyze the Solana NFT market. These tools are designed to add to the original features MagicEden provides. At the point of writing each script MagicEden has not implemented the feature (to the best of my knowledge). If at any point MagicEden implements a feature in this repo or a similar feature I will do my best to note it in the sections below.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This repo contains scripts that access NFT APIs such as MagicEden (marketplace) or HowRare.is (rarity tools) to analyze the Solana NFT market. These tools are designed to add to the original features MagicEden provides. At the point of writing each script MagicEden has not implemented the feature (to the best of my knowledge). If at any point MagicEden implements a feature in this repo or a similar feature I will do my best to note it in the sections below. The scripts in this repo are designed to be portable, each script functions independently.
 
 ## Contents
 - [Finding Market Symbols](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Finding-Market-Symbols)
@@ -14,7 +14,7 @@
 - [Tip Jar](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Solana-Tip-Jar)
 
 ## Finding Market Symbols
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Any reference to a collection symbol in this repo refers to the collection symbols assigned to collections by API providers (MagicEden, HowRare.is). 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Any reference to a collection symbol in this repo refers to the collection symbols assigned by API providers (MagicEden, HowRare.is). 
 
 **HowRare.is Collection Symbol:**
 
