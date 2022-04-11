@@ -5,7 +5,7 @@
 ## Contents
 - [Getting Started](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Getting-Started)
   - [Finding Market Symbols](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Finding-Market-Symbols)
-- [Listings & Sale Tools](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Listings-&-Sale-Tools)
+- [Listing Tools](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Listings-&-Sale-Tools)
   - [Deal Sniper](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Deal-Sniper)  
   - [Unique Sellers](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Unique-Sellers)
   - [Recent Buyers](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Recent-Buyers)
@@ -36,7 +36,7 @@
 
 * Search the collection in the search bar, the code after the ```/marketplace/``` in the url is your collections MagicEden collection symbol
 
-# Listings & Sale Tools
+# Listings Tools
 
 ## Deal Sniper
 
