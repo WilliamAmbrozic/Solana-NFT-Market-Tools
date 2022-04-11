@@ -17,7 +17,11 @@
 - [Tip Jar](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Solana-Tip-Jar)
 
 # Getting Started
+
 ## Finding Market Symbols
+
+[[Back to contents]](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#contents)
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Any reference to a collection symbol in this repo refers to the collection symbols assigned by API providers (MagicEden, HowRare.is). 
 
 **HowRare.is Collection Symbol:**
