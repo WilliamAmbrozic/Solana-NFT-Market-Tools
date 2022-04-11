@@ -3,16 +3,20 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This repo contains scripts that access NFT APIs such as MagicEden (marketplace) or HowRare.is (rarity tools) to analyze the Solana NFT market. These tools are designed to add to the original features MagicEden provides. At the point of writing each script MagicEden has not implemented the feature (to the best of my knowledge). If at any point MagicEden implements a feature in this repo or a similar feature I will do my best to note it in the sections below. The scripts in this repo are designed to be portable, each script functions independently.
 
 ## Contents
-- [Finding Market Symbols](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Finding-Market-Symbols)
-- [Scripts](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Scripts)  
+- [Getting Started](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Getting-Started)
+  - [Finding Market Symbols](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Finding-Market-Symbols)
+- [Listings & Sale Tools](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Listings-&-Sales)
   - [Deal Sniper](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Deal-Sniper)  
   - [Unique Sellers](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Unique-Sellers)
-  - [Attribute Count Floors](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Attribute-Count-Floors)
+  - [Recent Buyers](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Recent-Buyers)
+- [Attribute Tools](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Attribute-Tools)
+  - [Attribute Count Floors](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Attribute-Tools)
   - [Attribute Count Listing Search](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Attribute-Count-Listing-Search)
   - [Wallet Attribute Evaluation](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Wallet-Attribute-Evaluation)  
 - [Find Me](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#find-me)
 - [Tip Jar](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Solana-Tip-Jar)
 
+# Getting Started
 ## Finding Market Symbols
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Any reference to a collection symbol in this repo refers to the collection symbols assigned by API providers (MagicEden, HowRare.is). 
 
@@ -28,7 +32,7 @@
 
 * Search the collection in the search bar, the code after the ```/marketplace/``` in the url is your collections MagicEden collection symbol
 
-## Scripts
+# Listings & Sale Tools
 
 ## Deal Sniper
 
@@ -58,7 +62,7 @@ or (top 10 default):
 
 [[Back to contents]](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#contents)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The ```unique_sellers.py``` script will output all wallet addresses listing along with the NFTs they are selling in the ```ME_COLLECTION_SYMBOL``` collection. For example, this script could help indicate if downward floor pressure is natural or caused by a whale account. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The ```unique_sellers.py``` script will output all wallet addresses listing along with the NFTs they are selling in the ```ME_COLLECTION_SYMBOL``` collection. For example, this script could help indicate if downward floor pressure is natural or caused by a whale account (unless masked well). 
 
 **DEMO:**
 
@@ -71,6 +75,26 @@ or (top 10 default):
 For Example:
 
 ```python3 unique_sellers.py solgods```
+
+## Recent Buyers
+
+[[Back to contents]](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#contents)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The ```recent_buyers.py``` script will output all wallet addresses (in the last 500 activities) buying with the NFTs they are buying in the ```ME_COLLECTION_SYMBOL``` collection. This script could help indicate if upward floor pressure is natural or caused by a whale account or the NFT project themselves (unless masked well). 
+
+**DEMO:**
+
+![Buyers](https://imgur.com/qTbnq1D.png)
+
+**Run With:**
+
+```python3 recent_buyers.py ME_COLLECTION_SYMBOL```
+
+For Example:
+
+```python3 recent_buyers.py gooney_toons```
+
+# Attribute Tools
 
 ## Attribute Count Floors
 
