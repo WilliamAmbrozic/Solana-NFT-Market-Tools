@@ -1,4 +1,4 @@
-# MagicEden-NFT-Scripts
+# Solana-NFT-Market-Analysis
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This repo contains scripts that access NFT APIs such as MagicEden (marketplace) or HowRare.is (rarity tools) to analyze the Solana NFT market. These tools are designed to add to the original features MagicEden provides. At the point of writing each script MagicEden has not implemented the feature (to the best of my knowledge). If at any point MagicEden implements a feature in this repo or a similar feature I will do my best to note it in the sections below. The scripts in this repo are designed to be portable, each script functions independently.
 
