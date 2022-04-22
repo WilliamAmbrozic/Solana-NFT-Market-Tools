@@ -66,7 +66,7 @@ or (top 10 default):
 
 [[Back to contents]](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#contents)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The ```unique_sellers.py``` script will output all wallet addresses listing along with the NFTs they are selling in the ```ME_COLLECTION_SYMBOL``` collection. For example, this script could help indicate if downward floor pressure is natural or caused by a whale account (unless masked well). 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The ```unique_sellers.py``` script will output all wallet addresses listing along with the NFTs they are selling in the ```ME_COLLECTION_SYMBOL``` collection. For example, this script could help indicate if downward floor pressure is natural or caused by a whale account. 
 
 **DEMO:**
 
@@ -84,7 +84,7 @@ For Example:
 
 [[Back to contents]](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#contents)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The ```recent_buyers.py``` script will output all wallet addresses (in the last 500 activities) buying along with the NFTs they are buying in the ```ME_COLLECTION_SYMBOL``` collection. This script could help indicate if upward floor pressure is natural or caused by a whale account / the NFT project themselves (unless masked well). 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The ```recent_buyers.py``` script will output all wallet addresses (in the last 500 activities) buying along with the NFTs they are buying in the ```ME_COLLECTION_SYMBOL``` collection. This script could help indicate if upward floor pressure is natural or caused by a whale account / the NFT project themselves. 
 
 **DEMO:**
 
