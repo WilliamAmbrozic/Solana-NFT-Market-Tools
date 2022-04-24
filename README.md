@@ -6,7 +6,9 @@
 - [Getting Started](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Getting-Started)
   - [Finding Market Symbols](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Finding-Market-Symbols)
 - [Listing Tools](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Listings-Tools)
-  - [Deal Sniper](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Deal-Sniper)  
+  - [Deal Scanner](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Deal-Scanner) 
+    - [Collection Scan](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Collection-Scan)   
+    - [Full Market Scan](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Full-Market-Scan) 
   - [Unique Sellers](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Unique-Sellers)
   - [Recent Buyers](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Recent-Buyers)
 - [Attribute Tools](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#Attribute-Tools)
@@ -38,37 +40,65 @@
 
 # Listings Tools
 
-## Deal Sniper
+## Deal Scanner
 
 [[Back to contents]](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#contents)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The ```deal_sniper.py``` script will output the top ```top_n``` deals found for a specified collection on MagicEden by HowRare.is rarity. All listings are looked at and placed in a hashmap that is sorted by values calculated through the following function:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The ```deal_scanner.py``` script will output the top ```top_n``` deals found for a specified collection on MagicEden by HowRare.is rarity or the full marketplace (only collections on HowRare). All listings are looked at and placed in a hashmap that is sorted by values calculated through the following function:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Deal Ratio :=** (NFT_RANK / NFTS_IN_COLLECTION) * LISTING_PRICE
 
-**DEMO:**
+### Collection Scan
 
 ![demo](https://imgur.com/WKNhXWr.png)
 
 **Run With:**
 
-```python3 deal_sniper.py ME_COLLECTION_SYMBOL HR_COLLECTION_SYMBOL top_n```
+```python3 deal_scanner.py ME_COLLECTION_SYMBOL HR_COLLECTION_SYMBOL top_n```
 
 For Example:
 
-```python3 deal_sniper.py gooney_toons gooneytoons 15```
+```
+python3 deal_scanner.py gooney_toons gooneytoons 15
+```
 
 or (top 10 default):
 
-```python3 deal_sniper.py gooney_toons gooneytoons```
+```
+python3 deal_scanner.py gooney_toons gooneytoons
+```
+
+### Full Market Scan
+
+![demo](https://imgur.com/WXjiu7u.png)
+
+**Run With:**
+
+```python3 deal_scanner.py -a top_n lower_price_bound upper_price_bound```
+
+For Example:
+
+```
+python3 deal_scanner.py -a 100 0.5 2.5
+```
+
+or (without price ranges):
+
+```
+python3 deal_scanner.py -a 100
+```
+
+or (top 10 default):
+
+```
+python3 deal_scanner.py -a
+```
 
 ## Unique Sellers
 
 [[Back to contents]](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#contents)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The ```unique_sellers.py``` script will output all wallet addresses listing along with the NFTs they are selling in the ```ME_COLLECTION_SYMBOL``` collection. For example, this script could help indicate if downward floor pressure is natural or caused by a whale account. 
-
-**DEMO:**
 
 ![Un_Seller](https://imgur.com/qTbnq1D.png)
 
@@ -78,15 +108,15 @@ or (top 10 default):
 
 For Example:
 
-```python3 unique_sellers.py solgods```
+```
+python3 unique_sellers.py solgods
+```
 
 ## Recent Buyers
 
 [[Back to contents]](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#contents)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The ```recent_buyers.py``` script will output all wallet addresses (in the last 500 activities) buying along with the NFTs they are buying in the ```ME_COLLECTION_SYMBOL``` collection. This script could help indicate if upward floor pressure is natural or caused by a whale account / the NFT project themselves. 
-
-**DEMO:**
 
 ![Buyers](https://imgur.com/fubeDMN.png)
 
@@ -96,7 +126,9 @@ For Example:
 
 For Example:
 
-```python3 recent_buyers.py gooney_toons```
+```
+python3 recent_buyers.py gooney_toons
+```
 
 # Attribute Tools
 
@@ -105,8 +137,6 @@ For Example:
 [[Back to contents]](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#contents)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```attribute_count_floors.py``` will provide the current floors for attribute counts on MagicEden along with the link to the floor NFT per count.
-
-**DEMO:**
 
 ![floors](https://imgur.com/oE8D5M3.png)
 
@@ -118,17 +148,21 @@ For Example:
 
 For Example:
 
-```python3 attribute_count_floors.py solgods``` or
+```
+python3 attribute_count_floors.py solgods
+``` 
 
-```python3 attribute_count_floors.py solgods solgods```
+or
+
+```
+python3 attribute_count_floors.py solgods solgods
+```
 
 ## Attribute Count Listing Search
 
 [[Back to contents]](https://github.com/WilliamAmbrozic/MagicEden-NFT-Scripts#contents)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```attribute_count_listings.py``` will provide the current listings for a specific attribute count on MagicEden along with the NFT links.
-
-**DEMO:**
 
 ![listings](https://imgur.com/haKZDSt.png)
 
@@ -140,9 +174,15 @@ For Example:
 
 For Example:
 
-```python3 attribute_count_listings.py solgods 3``` or
+```
+python3 attribute_count_listings.py solgods 3
+``` 
 
-```python3 attribute_count_listings.py solgods solgods 3```
+or
+
+```
+python3 attribute_count_listings.py solgods solgods 3
+```
 
 
 ## Wallet Attribute Evaluation
@@ -157,7 +197,9 @@ For Example:
 
 For Example:
 
-```python3 wallet_evaluation.py 8vU6RfyFDk9WriVgaJohBxqtE86TLtjAR8cPWjdU6zEN gooney_toons```
+```
+python3 wallet_evaluation.py 8vU6RfyFDk9WriVgaJohBxqtE86TLtjAR8cPWjdU6zEN gooney_toons
+```
 
 
 ## Find Me
