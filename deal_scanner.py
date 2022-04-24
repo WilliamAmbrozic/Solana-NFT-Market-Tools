@@ -26,7 +26,6 @@ def get_meta_from_mint(mint):
     return response.json()
 
 def get_how_collections():
-    #Possibly filter floor here
     url = "https://api.howrare.is/v0.1/collections"
     response = requests.request("GET", url)
     response = response.json()
