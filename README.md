@@ -74,15 +74,15 @@ python3 deal_scanner.py gooney_toons gooneytoons
 
 **Run With:**
 
-```python3 deal_scanner.py -a top_n lower_price_bound upper_price_bound```
+```python3 deal_scanner.py -a top_n floor_lower_price_bound floor_upper_price_bound```
 
-For Example:
+For Example (filters collections with floors outside range):
 
 ```
 python3 deal_scanner.py -a 100 0.5 2.5
 ```
 
-or (without price ranges):
+or (without floor price ranges):
 
 ```
 python3 deal_scanner.py -a 100
