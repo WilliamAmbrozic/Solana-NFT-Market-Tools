@@ -26,7 +26,6 @@ def get_meta_from_mint(mint):
     return response.json()
 
 def get_how_collections():
-    #Possibly filter floor here
     url = "https://api.howrare.is/v0.1/collections"
     response = requests.request("GET", url)
     response = response.json()
@@ -227,7 +226,7 @@ if "-a" in sys.argv:
     print("=================================================================")
 
     if bound != None:
-        print("Top " + str(top_n) + " deals on MagicEden priced between " + bound[0] + "-" + bound[1] + " SOL ")
+        print("Top " + str(top_n) + " deals on MagicEden priced between " + str(bound[0]) + "-" + str(bound[1]) + " SOL ")
     else:
         print("Top " + str(top_n) + " deals on MagicEden")
 
