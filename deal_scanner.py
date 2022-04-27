@@ -51,7 +51,7 @@ def get_me_symbol(HR_symbol):
     except:
         return None
 
-def gen_magic_how_pair(HR_symbols, ME_HR_map):
+def gen_magic_how_pair(HR_symbols):
     ret = {}
 
     for sym in tqdm(HR_symbols):
