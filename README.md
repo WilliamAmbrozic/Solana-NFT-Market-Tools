@@ -208,7 +208,7 @@ python3 wallet_evaluation.py 8vU6RfyFDk9WriVgaJohBxqtE86TLtjAR8cPWjdU6zEN gooney
 - [Twitter](https://twitter.com/WilliamAmbrozic)
 
 ## Solana Tip Jar
-  * 8vU6RfyFDk9WriVgaJohBxqtE86TLtjAR8cPWjdU6zEN
+  * 39M6R5KP6NUX4KGATWaLGVaDrmLMpzbKAQU1q59rhHoT
 ### Bitcoin
   * bc1qa7vkam2w4cgw8njqx976ga5ns8egsq3yzxzlrt
 
